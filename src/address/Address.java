@@ -1,12 +1,12 @@
 package address;
 
-public class Adress {
+public class Address {
     private String country;
     private String postalCode;
     private String street;
     private int floor;
 
-    public Adress(String country, String postalCode, String street, int floor) {
+    public Address(String country, String postalCode, String street, int floor) {
         this.country = country;
         this.postalCode = postalCode;
         this.street = street;
@@ -43,6 +43,16 @@ public class Adress {
 
     public void setFloor(int floor) {
         this.floor = floor;
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "country='" + country + '\'' +
+                ", postalCode='" + postalCode + '\'' +
+                ", street='" + street + '\'' +
+                ", floor=" + floor +
+                '}';
     }
 }
 
